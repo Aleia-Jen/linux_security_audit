@@ -2,28 +2,32 @@
 
 ## Listening Services
 
-The system is running several local services, primarily bound to loopback addresses (127.0.0.1 and ::1), including:
+The system is running several local services bound primarily to loopback interfaces (127.0.0.1 and ::1), including:
 
 - Local DNS resolver (port 53)
 - CUPS printing service (port 631)
 - mDNS (port 5353)
 - NTP (port 323)
 
-No externally bound TCP services were identified.
+No externally bound TCP services were identified during enumeration.
 
 ## Firewall Status
 
-The Ubuntu Uncomplicated Firewall (UFW) was evaluated to determine host-based firewall enforcement.
+The Ubuntu Uncomplicated Firewall (UFW) is installed but currently inactive.
 
-(Status to be inserted after verification.)
+Status: inactive
 
 ## Risk Assessment
 
-Although most services are bound to loopback interfaces, the absence of a host-based firewall may increase risk if network configuration changes or additional services are introduced.
+Although no externally exposed services were observed, the absence of an active host-based firewall increases risk if:
+
+- Network mode changes (e.g., bridged adapter)
+- Additional services are installed
+- System is connected to an untrusted network
 
 ## Recommendation
 
-Enable UFW and implement a default deny inbound policy:
+Enable UFW with a default deny inbound policy:
 
 sudo ufw default deny incoming  
 sudo ufw default allow outgoing  
