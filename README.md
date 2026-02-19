@@ -1,7 +1,7 @@
 # Linux Security Audit Project
 
 ## Project Overview
-This project documents a structured security audit of a simulated Ubuntu Linux system deployed in a virtualized environment. The objective was to evaluate system security posture, identify misconfigurations, and recommend hardening measures aligned with industry best practices.
+This project documents a structured security audit of a simulated Ubuntu Linux system deployed in a virtualized environment. The objective was to evaluate system security posture, identify misconfigurations, and recommend hardening measures aligned with industry best practices. The assessment identified configuration weaknesses affecting privilege management and network exposure. Remediation actions were implemented to reduce overall system risk.
 
 ## Environment
 - Host System: Apple Silicon (M4)
@@ -20,13 +20,20 @@ The assessment focused on:
 - File system permissions and system hardening
 
 ## Methodology
-The audit was conducted using native Linux administrative commands to enumerate system configuration, review security controls, and analyze potential risk areas. Findings were documented, risk-rated, and remediated where appropriate.
+The audit leveraged native Linux administrative utilities to enumerate system configuration, validate security controls, and identify misconfigurations. Findings were documented, risk-rated based on impact and likelihood, and remediated where appropriate.
+
+## Remediation Status
+- Host firewall enabled with default deny inbound policy
+- Unnecessary service exposure reviewed and restricted
+- Firewall configuration validated post-implementation
+- Risk ratings documented and formal recommendations provided
 
 ## Skills Demonstrated
-- Linux system auditing
-- Access control analysis
-- Authentication policy review
-- Network exposure assessment
-- Log analysis
-- Risk evaluation and remediation
-- Technical documentation
+- Linux security auditing and system enumeration
+- Privilege and access control analysis
+- Authentication and password policy assessment
+- Network service exposure analysis
+- Log and authentication monitoring review
+- Risk identification, rating, and remediation
+- Technical reporting and documentation
+
