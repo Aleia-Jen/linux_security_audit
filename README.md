@@ -1,10 +1,7 @@
 # Linux Security Audit Project
-<p align="center">
-  <img src="https://img.shields.io/badge/Platform-Ubuntu_ARM64-orange" />
-  <img src="https://img.shields.io/badge/VirtualBox-Oracle-blue" />
-  <img src="https://img.shields.io/badge/Focus-Security_Audit-red" />
-  <img src="https://img.shields.io/badge/Remediation-Implemented-success" />
-</p>
+![Platform](https://img.shields.io/badge/Platform-Ubuntu_ARM64-orange)
+![Focus](https://img.shields.io/badge/Type-Security_Audit-blue)
+![Status](https://img.shields.io/badge/Remediation-Implemented-success)
 ## Project Overview
 This project documents a structured security audit of a simulated Ubuntu Linux system deployed in a virtualized environment. The objective was to evaluate system security posture, identify misconfigurations, and recommend hardening measures aligned with industry best practices. The assessment identified configuration weaknesses affecting privilege management and network exposure. Remediation actions were implemented to reduce overall system risk.
 
